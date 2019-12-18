@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Lakki+Reddy&display=swap" rel="stylesheet">
+	<title>Pryvit</title>
+	<style type="text/css">
+
+img{
+
+  width: 300px;
+
+  height: 200px;
+
+  }
+
+</style>
+
+	<link rel ="stylesheet" href ="2.css">
+	
+</head>
+<body>
+	
+<div id="header"  class="divanos">   
+
+ <img src="img/2.jpg" id="img_1"  style="position:absolute; "  />
+
+ <img src="img/3.jpg" id="img_2"  style="position:absolute;opacity: 0; filter: alpha(opacity=0); "  />
+
+ <img src="img/4.jpg" id="img_3"  style="position:absolute;opacity: 0; filter: alpha(opacity=0); "  />
+
+ <img src="img/6.jpg" id="img_4"  style="position:absolute;opacity: 0; filter: alpha(opacity=0); " />
+
+ <img src="https://maximum.fm/uploads/640w_DIR/media_news/2018/12/5c17ac11cbfe2658713099.png" id="img_5"  style="position:absolute;opacity: 0; filter: alpha(opacity=0); "  />
+ 
+ <img src="img/1.jpg" id="img_6"  style="position:absolute;opacity: 0; filter: alpha(opacity=0); "  />
+
+</div>
+
+<script type="text/javascript">
+
+ var image_count = 6;
+
+ var interval = 3000; //пауза
+
+ var time_out = 5; //скорость смены картинки
+
+ var i = 6;
+
+ var timeout;
+
+ var opacity = 100;
+
+ function change_image() {
+
+ opacity--;
+
+ var j = i + 1;
+
+ var current_image = 'img_' + i;
+
+ if (i == image_count) j = 1;
+ var next_image = 'img_' + j;
+
+ document.getElementById(current_image).style.opacity=opacity/100;
+
+ document.getElementById(current_image).style.filter='alpha(opacity='+opacity+')';
+
+ document.getElementById(next_image).style.opacity= (100-opacity)/100;
+
+ document.getElementById(next_image).style.filter=' alpha(opacity='+(100-opacity)+')';
+
+ timeout = setTimeout("change_image()", time_out);
+
+if (opacity==1) {
+ opacity = 100;
+
+ clearTimeout(timeout);
+
+i++;
+
+if (i>image_count) i=1;
+
+timeout = setTimeout("change_image()", interval);
+
+ }
+
+ }
+
+change_image()
+
+</script>
+<button type="submit" value="Кнопка" onClick='location.href="index.html"'><h3>НАЗАД</h3></button>
+
+</body>
+</html>

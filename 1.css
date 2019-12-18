@@ -1,0 +1,41 @@
+body {
+  background-color: forestgreen;
+	font-family: 'Lakki Reddy', cursive;
+}
+h2{
+	font-family: 'Lakki Reddy', cursive;
+	color: white;
+	margin: right;
+	position: absolute;
+	top: 40%;
+	left:45%;
+}
+button{
+	font-family: 'Lakki Reddy', cursive;
+	color: red;
+	margin: right;
+	position: absolute;
+	top: 50%;
+	left:45%;
+	font-size: 30px;
+	color: #218294;
+	width: 250px;
+	height: 70px;
+	line-height: 15px;
+	}
+.divanos{
+	margin: right;
+	position: absolute;
+	top: 25%;
+	left:43%;
+}
+
+img{
+	top: 0.2%;
+	left:80%;
+	width: 500px;
+	height: auto;
+	
+}
+
+

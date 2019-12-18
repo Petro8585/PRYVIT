@@ -1,0 +1,46 @@
+body {
+  background-image:url(img/snow.jpg);
+	font-family: 'Lakki Reddy', cursive;
+	background-position: center;
+	background-repeat: none;
+    background-size: cover;
+	max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+}
+h2{
+	font-family: 'Lakki Reddy', cursive;
+	color: white;
+	margin: right;
+	position: absolute;
+	top: 40%;
+	left:45%;
+}
+button{
+	font-family: 'Lakki Reddy', cursive;
+	color: red;
+	margin: right;
+	position: absolute;
+	top: 2%;
+	left:45%;
+	font-size: 30px;
+	color: #218294;
+	width: 150px;
+	height: 45px;
+	line-height: 1px;
+	}
+.divanos{
+	position: absolute;
+	top: 25%;
+	left:43%;
+}
+
+img{
+	top: 20%;
+	left:40%;
+	width: auto;
+	height: 500px;
+	
+}
+
+
